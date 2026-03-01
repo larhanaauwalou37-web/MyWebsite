@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Website na Auwal</title>
-<style>
-body{
-    background:#111;
-    color:white;
-    font-family:Arial;
-    text-align:center;
-}
+    <title>Website na Auwal</title>
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-.video-box{
-    margin:20px;
-}
-</style>
+        header {
+            background: #222;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f90;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .video-box {
+            margin: 10px;
+        }
+
+        video {
+            width: 300px;
+            height: 200px;
+            background: black;
+        }
+
+        footer {
+            background: #222;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>Website na Auwal domin kallon video</h1>
+<header>
+    Website na Auwal
+</header>
 
-<div class="video-box">
-<video width="300" controls>
-<source src="myvideo.mp4" type="video/mp4">
-</video>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Videos</a>
+    <a href="#">About</a>
+</nav>
+
+<div class="video-grid">
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+    </div>
 </div>
 
-<div class="video-box">
-<video width="300" controls>
-<source src="myvideo.mp4" type="video/mp4">
-</video>
-</div>
-
-<div class="video-box">
-<video width="300" controls>
-<source src="myvideo.mp4" type="video/mp4">
-</video>
-</div>
+<footer>
+    © 2026 Website na Auwal
+</footer>
 
 </body>
 </html>
