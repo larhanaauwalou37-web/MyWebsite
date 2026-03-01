@@ -1,126 +1,33 @@
-<!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website na Auwal</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #111; /* Dark background */
-            color: #fff;
-        }
+<!-- Header -->
+<div class="header">
+    <h1>Website na Auwal</h1>
+    <p>Shafin nan yana dauke da videos masu jan hankali da abubuwan nishadi.</p>
+    <a href="#videos" class="button">Kalli Videos</a>
+</div>
 
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-        }
+<!-- Main Video (kamar YouTube) -->
+<div class="main-video-container">
+    <video controls autoplay muted loop>
+        <source src="myvideo.mp4" type="video/mp4">
+    </video>
+</div>
 
-        /* Babban video */
-        .main-video-container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto 40px auto;
-            position: relative;
-        }
+<!-- Video Grid -->
+<div class="video-grid">
+    <!-- Video boxes kamar yadda muka yi -->
+</div>
 
-        .main-video-container video {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
+<!-- About / Info section -->
+<div class="about">
+    <h2>Game da Auwal</h2>
+    <p>
+        Ni ne Auwal, mai wannan website ɗin. A nan zaku sami videos masu kayatarwa, 
+        zane-zane masu kyau, da abubuwan nishadi da ilimantarwa. 
+        Za mu rika sabunta shafin nan akai-akai da sabbin videos da abubuwan jan hankali.
+    </p>
+</div>
 
-        .main-video-info {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            background: rgba(0,0,0,0.5);
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-
-        /* Grid na sauran videos */
-        .video-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .video-box {
-            width: 320px;
-            height: 180px;
-            background-color: #222;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .video-box video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .video-title {
-            text-align: center;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        .video-desc {
-            text-align: center;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Website na Auwal - Videos</h1>
-
-    <!-- Babban video -->
-    <div class="main-video-container">
-        <video controls autoplay muted loop>
-            <source src="myvideo.mp4" type="video/mp4">
-        </video>
-        <div class="main-video-info">
-            <h2>Video Babba: Sunan Video</h2>
-            <p>Description: Wannan shine babban video kamar YouTube.</p>
-        </div>
-    </div>
-
-    <!-- Sauran videos -->
-    <div class="video-grid">
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo2.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 2</div>
-            <div class="video-desc">Description: Wannan video ne na biyu.</div>
-        </div>
-
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo3.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 3</div>
-            <div class="video-desc">Description: Wannan video ne na uku.</div>
-        </div>
-
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo4.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 4</div>
-            <div class="video-desc">Description: Wannan video ne na hudu.</div>
-        </div>
-    </div>
-
-</body>
-</html>
+<!-- Footer -->
+<div class="footer">
+    &copy; 2026 Website na Auwal | Duk haƙƙoƙi na mallaka
+</div>
