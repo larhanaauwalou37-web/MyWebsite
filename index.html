@@ -1,136 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Website na Auwal</title>
-    <style>
-        body {
-            background: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+<div class="video-grid">
 
-        header {
-            background: #222;
-            padding: 20px;
-            font-size: 24px;
-            text-align: center;
-        }
-
-        nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #f90;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .video-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .video-box {
-            margin: 10px;
-            width: 320px;
-        }
-
-        video {
-            width: 100%;
-            height: 180px;
-            background: black;
-        }
-
-        .video-title {
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        .video-desc {
-            font-size: 14px;
-            color: #ccc;
-        }
-
-        footer {
-            background: #222;
-            padding: 15px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-    </style>
-</head>
-<body>
-
-<header>
-    Website na Auwal
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#videos">Videos</a>
-    <a href="#about">About</a>
-</nav>
-
-<section id="home">
-    <h2>Home</h2>
-    <p>Barka da zuwa website na Auwal! A nan zaka iya kallon videos masu ban sha'awa.</p>
-</section>
-
-<section id="videos">
-    <h2>Videos</h2>
-    <div class="video-grid">
-        
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 1: Sunan Video</div>
-            <div class="video-desc">Description: Wannan video ne na farko, yana nuna yadda ake coding.</div>
-        </div>
-
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 2: Sunan Video</div>
-            <div class="video-desc">Description: Wannan video na biyu, yana nuna labarin da ban sha'awa.</div>
-        </div>
-
-        <div class="video-box">
-            <video controls>
-                <source src="myvideo.mp4" type="video/mp4">
-            </video>
-            <div class="video-title">Video 3: Sunan Video</div>
-            <div class="video-desc">Description: Wannan video na uku, yana koya maka abu mai amfani.</div>
-        </div>
-
+    <!-- Video 1 -->
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Video 1: Sunan Video</div>
+        <div class="video-desc">Description: Wannan video ne na farko, yana nuna yadda ake coding.</div>
     </div>
-</section>
 
-<section id="about">
-    <h2>About</h2>
-    <p>Sunana Auwal. Wannan shine website na domin mutane su kallon videos daga wayata ko komai.</p>
-</section>
+    <!-- Video 2 -->
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Video 2: Sunan Video</div>
+        <div class="video-desc">Description: Wannan video na biyu, yana nuna labarin da ban sha'awa.</div>
+    </div>
 
-<footer>
-    © 2026 Website na Auwal
-</footer>
+    <!-- Video 3 -->
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Video 3: Sunan Video</div>
+        <div class="video-desc">Description: Wannan video na uku, yana koya maka abu mai amfani.</div>
+    </div>
 
-</body>
-</html>
+    <!-- Video 4 (sabon video: myvideo2.mp4) -->
+    <div class="video-box">
+        <video controls>
+            <source src="myvideo2.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Video 4: Sunan Video Daban</div>
+        <div class="video-desc">Description: Wannan video ɗin na Auwal Ahmed, yana nuna wani abu daban.</div>
+    </div>
+
+</div>
