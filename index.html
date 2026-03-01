@@ -1,33 +1,164 @@
-<!-- Header -->
-<div class="header">
-    <h1>Website na Auwal</h1>
-    <p>Shafin nan yana dauke da videos masu jan hankali da abubuwan nishadi.</p>
-    <a href="#videos" class="button">Kalli Videos</a>
-</div>
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website na Auwal</title>
+    <style>
+        /* Background da font */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff416c, #ff4b2b); /* Mai jan hankali */
+            color: #fff;
+        }
 
-<!-- Main Video (kamar YouTube) -->
-<div class="main-video-container">
-    <video controls autoplay muted loop>
-        <source src="myvideo.mp4" type="video/mp4">
-    </video>
-</div>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-<!-- Video Grid -->
-<div class="video-grid">
-    <!-- Video boxes kamar yadda muka yi -->
-</div>
+        /* Main video section */
+        .main-video-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            position: relative;
+        }
 
-<!-- About / Info section -->
-<div class="about">
-    <h2>Game da Auwal</h2>
-    <p>
-        Ni ne Auwal, mai wannan website ɗin. A nan zaku sami videos masu kayatarwa, 
-        zane-zane masu kyau, da abubuwan nishadi da ilimantarwa. 
-        Za mu rika sabunta shafin nan akai-akai da sabbin videos da abubuwan jan hankali.
-    </p>
-</div>
+        .main-video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
 
-<!-- Footer -->
-<div class="footer">
-    &copy; 2026 Website na Auwal | Duk haƙƙoƙi na mallaka
-</div>
+        .main-video-info {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Video grid (YouTube style) */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .video-box {
+            width: 320px;
+            height: 180px;
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-title {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .video-desc {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        /* About section */
+        .about {
+            background-color: #111;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Website na Auwal - Bidiyo</h1>
+
+    <!-- Main Video -->
+    <div class="main-video-container">
+        <video controls autoplay muted loop>
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+        <div class="main-video-info">
+            <h2>Video Babba</h2>
+            <p>Wannan shine babban video na wannan mako.</p>
+        </div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="video-grid">
+        <div class="video-box">
+            <video controls>
+                <source src="myvideo2.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Video 2</div>
+            <div class="video-desc">Description: Wannan shine video na biyu.</div>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="myvideo3.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Video 3</div>
+            <div class="video-desc">Description: Wannan shine video na uku.</div>
+        </div>
+
+        <!-- Za a iya ƙara video boxes daga nan kai tsaye -->
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+        <h2>Game da Auwal</h2>
+        <p>
+            Ni ne Auwal, mai wannan website. Za mu rika dora bidiyo sabbi duk mako, 
+            da kuma fim mai dogon zango nan gaba. Duk bidiyo suna da tsari da kyau, 
+            kuma zaku iya kallon su kai tsaye daga shafin nan.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2026 Website na Auwal | Duk haƙƙoƙi na mallaka
+    </div>
+
+</body>
+</html>
