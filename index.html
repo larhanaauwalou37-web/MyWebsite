@@ -1,39 +1,94 @@
-<div class="video-grid">
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website na Auwal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Dark background */
+            color: #fff;
+        }
 
-    <!-- Video 1 -->
-    <div class="video-box">
-        <video controls>
-            <source src="myvideo.mp4" type="video/mp4">
-        </video>
-        <div class="video-title">Video 1: Sunan Video</div>
-        <div class="video-desc">Description: Wannan video ne na farko, yana nuna yadda ake coding.</div>
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Sarari tsakanin videos */
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .video-box {
+            width: 320px;   /* Duk videos su zama wannan width */
+            height: 180px;  /* Duk videos su zama wannan height */
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Video ya cika box ɗin */
+        }
+
+        .video-title {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .video-desc {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Website na Auwal - Videos</h1>
+
+    <div class="video-grid">
+
+        <!-- Video 1 -->
+        <div class="video-box">
+            <video controls>
+                <source src="myvideo.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Video 1</div>
+            <div class="video-desc">Description: Wannan video ne na farko.</div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-box">
+            <video controls>
+                <source src="myvideo2.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Video 2</div>
+            <div class="video-desc">Description: Wannan video ne na biyu.</div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-box">
+            <video controls>
+                <source src="myvideo3.mp4" type="video/mp4">
+            </video>
+            <div class="video-title">Video 3</div>
+            <div class="video-desc">Description: Wannan video ne na uku.</div>
+        </div>
+
     </div>
 
-    <!-- Video 2 -->
-    <div class="video-box">
-        <video controls>
-            <source src="myvideo.mp4" type="video/mp4">
-        </video>
-        <div class="video-title">Video 2: Sunan Video</div>
-        <div class="video-desc">Description: Wannan video na biyu, yana nuna labarin da ban sha'awa.</div>
-    </div>
-
-    <!-- Video 3 -->
-    <div class="video-box">
-        <video controls>
-            <source src="myvideo.mp4" type="video/mp4">
-        </video>
-        <div class="video-title">Video 3: Sunan Video</div>
-        <div class="video-desc">Description: Wannan video na uku, yana koya maka abu mai amfani.</div>
-    </div>
-
-    <!-- Video 4 (sabon video: myvideo2.mp4) -->
-    <div class="video-box">
-        <video controls>
-            <source src="myvideo2.mp4" type="video/mp4">
-        </video>
-        <div class="video-title">Video 4: Sunan Video Daban</div>
-        <div class="video-desc">Description: Wannan video ɗin na Auwal Ahmed, yana nuna wani abu daban.</div>
-    </div>
-
-</div>
+</body>
+</html>
