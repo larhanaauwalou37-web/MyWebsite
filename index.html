@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shafin Auwal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        /* Menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content */
+        .container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        p {
+            font-size: 22px;
+            animation: slideDown 2s ease forwards;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+        a.button:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 100px 20px;
+        }
+
+        #about { background-color: rgba(255,255,255,0.05); }
+        #projects { background-color: rgba(255,255,255,0.1); }
+        #video { background-color: rgba(255,255,255,0.2); text-align: center; }
+        #contact { background-color: rgba(255,255,255,0.15); }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        @keyframes slideDown {
+            0% {opacity:0; transform: translateY(-50px);}
+            100% {opacity:1; transform: translateY(0);}
+        }
+
+        @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Menu -->
+<div class="menu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Bismillahi, Rahamani Rahim</h1>
+    <p>Sannu Auwal</p>
+    <a href="https://www.google.com" class="button">Danna Nan</a>
+</div>
+
+<!-- Sections -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Ni Auwal ne, ina son coding da gina website masu kyau.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Wannan shine shafina na farko. Zan kara projects nan gaba.</p>
+</section>
+
+<section id="video">
+    <h2>Video na Website</h2>
+    <video controls autoplay muted loop playsinline>
+        <source src="myvideo.mp4" type="video/mp4">
+        Browser ɗinka bai goyi bayan video ba.
+    </video>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Za ka iya tuntubata a email: larhanaauwalou37@gmail.com</p>
+</section>
+
+</body>
+</html>
