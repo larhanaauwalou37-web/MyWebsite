@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website na Auwal</title>
+<title>Website na Auwal - Home</title>
 <style>
 /* General */
 body { font-family: 'Arial', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#fff;}
@@ -23,6 +23,10 @@ nav a:hover { color:#ffcc00; }
 .featured::-webkit-scrollbar { display:none; }
 .featured video { border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.7); height:250px; }
 .featured h2 { text-align:center; margin:10px 0; color:#ffcc00;}
+
+/* Trending section */
+.trending { padding:20px; }
+.trending h2 { color:#ffcc00; margin-bottom:15px; }
 
 /* Video grid */
 .container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }
@@ -62,26 +66,28 @@ footer { background:#111; text-align:center; padding:20px; margin-top:20px; font
 <video controls src="myvideo3.mp4"></video>
 </div>
 
+<!-- Trending Section -->
+<div class="trending">
+<h2>Trending Videos</h2>
 <div class="container">
-<!-- Video Cards -->
-<div class="video-card">
-<a href="video1.html"><img src="thumbnail1.jpg" alt="Video 1"></a>
-<h3>Sunna Video 1</h3>
-<p>Short description na video 1</p>
-</div>
+  <div class="video-card">
+    <a href="video1.html"><img src="thumbnail1.jpg" alt="Video 1"></a>
+    <h3>Sunna Video 1</h3>
+    <p>Short description na video 1</p>
+  </div>
 
-<div class="video-card">
-<a href="video2.html"><img src="thumbnail2.jpg" alt="Video 2"></a>
-<h3>Sunna Video 2</h3>
-<p>Short description na video 2</p>
-</div>
+  <div class="video-card">
+    <a href="video2.html"><img src="thumbnail2.jpg" alt="Video 2"></a>
+    <h3>Sunna Video 2</h3>
+    <p>Short description na video 2</p>
+  </div>
 
-<div class="video-card">
-<a href="video3.html"><img src="thumbnail3.jpg" alt="Video 3"></a>
-<h3>Sunna Video 3</h3>
-<p>Short description na video 3</p>
+  <div class="video-card">
+    <a href="video3.html"><img src="thumbnail3.jpg" alt="Video 3"></a>
+    <h3>Sunna Video 3</h3>
+    <p>Short description na video 3</p>
+  </div>
 </div>
-
 </div>
 
 <footer>
@@ -89,4 +95,4 @@ footer { background:#111; text-align:center; padding:20px; margin-top:20px; font
 </footer>
 
 </body>
-</html>
+  </html>
