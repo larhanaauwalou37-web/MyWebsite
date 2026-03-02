@@ -3,25 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website na Auwal</title>
+<title>Website na Auwal - Home</title>
 <style>
 /* General */
 body {
   font-family: 'Arial', sans-serif;
   margin:0; padding:0;
-  background: url('background.jpg') no-repeat center center fixed;
+  background: url('background.jpg') no-repeat center center fixed; /* Hoton background */
   background-size: cover;
   color:#fff;
   position: relative;
 }
 
+/* Dark overlay for readability */
 body::before {
-  content:"";
-  position:fixed;
+  content: "";
+  position: fixed;
   top:0; left:0;
   width:100%; height:100%;
-  background: rgba(0,0,0,0.6);
-  z-index:-1;
+  background: rgba(0,0,0,0.6); /* Overlay */
+  z-index: -1;
 }
 
 /* Header */
@@ -74,19 +75,17 @@ footer { background: rgba(17,17,17,0.85); text-align:center; padding:20px; margi
 <a href="contact.html">Contact</a>
 </nav>
 
-<!-- Featured Videos -->
+<!-- Featured Videos Carousel -->
 <div class="featured">
-<h2>Featured Videos</h2>
-<!-- Add new video here -->
-<video controls src="myvideo1.mp4"></video>
+<video controls src="myvideo.mp4"></video>
 <video controls src="myvideo2.mp4"></video>
+<video controls src="myvideo3.mp4"></video>
 </div>
 
-<!-- Trending / Video Grid -->
+<!-- Trending Section -->
 <div class="trending">
 <h2>Trending Videos</h2>
 <div class="container">
-  <!-- Add new video card here -->
   <div class="video-card">
     <a href="video1.html"><img src="thumbnail1.jpg" alt="Video 1"></a>
     <h3>Sunna Video 1</h3>
@@ -99,6 +98,11 @@ footer { background: rgba(17,17,17,0.85); text-align:center; padding:20px; margi
     <p>Short description na video 2</p>
   </div>
 
+  <div class="video-card">
+    <a href="video3.html"><img src="thumbnail3.jpg" alt="Video 3"></a>
+    <h3>Sunna Video 3</h3>
+    <p>Short description na video 3</p>
+  </div>
 </div>
 </div>
 
