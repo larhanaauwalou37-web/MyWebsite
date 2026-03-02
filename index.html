@@ -3,27 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunna Video 1</title>
+<title>Contact Us</title>
 <style>
 body { font-family: Arial, sans-serif; background:#0d0d0d; color:#fff; margin:0; padding:0;}
 header, footer { background:#1a1a1a; padding:20px; text-align:center; color:#ffcc00;}
 nav { background:#222; display:flex; justify-content:center; gap:20px; padding:10px 0; }
 nav a { color:#fff; font-weight:bold; transition:0.3s; }
 nav a:hover { color:#ffcc00; }
-.video-container { text-align:center; padding:20px; }
-video { width:90%; max-width:800px; border-radius:10px; }
-.related { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }
-.video-card { background:#1a1a1a; border-radius:10px; overflow:hidden; width:300px; box-shadow:0 5px 15px rgba(0,0,0,0.5);}
-.video-card img { width:100%; display:block; }
-.video-card h3 { margin:10px; color:#ffcc00; }
-.video-card p { margin:10px; font-size:0.9em; color:#ccc; }
-@media(max-width:768px){ .video-card { width:90%; } nav { flex-direction: column; gap:10px; } }
+form { max-width:500px; margin:50px auto; display:flex; flex-direction:column; gap:15px; }
+input, textarea { padding:10px; border-radius:5px; border:none; }
+button { padding:10px; background:#ffcc00; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Sunna Video 1</h1>
+<h1>Contact Us</h1>
 </header>
 
 <nav>
@@ -33,27 +28,12 @@ video { width:90%; max-width:800px; border-radius:10px; }
 <a href="contact.html">Contact</a>
 </nav>
 
-<div class="video-container">
-<video controls>
-<source src="myvideo.mp4" type="video/mp4">
-</video>
-<h2>Video 1 Title</h2>
-<p>Full description na wannan video. Za a iya saka categories, rating, duration, etc.</p>
-<button onclick="window.location.href='myvideo.mp4'" style="padding:10px 20px; background:#ffcc00; border:none; border-radius:5px; cursor:pointer;">Download Video</button>
-</div>
-
-<div class="related">
-<div class="video-card">
-<a href="video2.html"><img src="thumbnail2.jpg" alt="Video 2"></a>
-<h3>Sunna Video 2</h3>
-<p>Short description</p>
-</div>
-<div class="video-card">
-<a href="video3.html"><img src="thumbnail3.jpg" alt="Video 3"></a>
-<h3>Sunna Video 3</h3>
-<p>Short description</p>
-</div>
-</div>
+<form action="mailto:larhanaauwalou37@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
 
 <footer>
 <p>© 2026 Website na Auwal | Contact: <a href="mailto:larhanaauwalou37@gmail.com">Email</a> | WhatsApp: <a href="https://wa.me/YOUR_NUMBER" target="_blank">Chat</a></p>
