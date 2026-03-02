@@ -1,18 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Website na Auwal</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: Arial; background:#111; color:#fff; margin:0; padding:0;}
+header { background:#222; padding:20px; text-align:center; }
+header h1 { margin:0; }
+nav { background:#333; padding:10px; text-align:center; }
+nav a { color:#fff; margin:0 10px; text-decoration:none; }
+.container { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
+.video-card { margin:10px; background:#222; padding:10px; width:300px; border-radius:8px; }
+.video-card img { width:100%; border-radius:8px; }
+.video-card h3 { margin:10px 0 0 0; }
+footer { background:#222; text-align:center; padding:20px; margin-top:20px; }
+</style>
 </head>
+<body>
 
-<body style="background:black; color:white; text-align:center;">
-
+<header>
 <h1>Website na Auwal</h1>
-<p>Barka da zuwa shafin kallon bidiyo</p>
+</header>
 
-<video width="90%" controls>
-<source src="myvideo.mp4" type="video/mp4">
-</video>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+<!-- Misali na video card -->
+<div class="video-card">
+<a href="video1.html"><img src="thumbnail1.jpg" alt="Video 1"></a>
+<h3>Sunna Video 1</h3>
+<p>Short description na video</p>
+</div>
+
+<div class="video-card">
+<a href="video2.html"><img src="thumbnail2.jpg" alt="Video 2"></a>
+<h3>Sunna Video 2</h3>
+<p>Short description na video</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Website na Auwal. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
